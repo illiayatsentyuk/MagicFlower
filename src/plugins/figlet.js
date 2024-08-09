@@ -7,7 +7,7 @@ const printHelloMessage = () => figlet("Magic Flower", function (err, data) {
         console.dir(err);
         return;
     }
-    console.clear();
+
     console.log(data);
 });
 

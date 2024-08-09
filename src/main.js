@@ -33,10 +33,11 @@ const choice = () =>{
                 console.clear();
                 print();
                 const player = await assortmentOption(choice);
-                console.log(game(player));
-                // console.log(chalk.green("play"));
-                // const player = createPlayer(choice);
-                // console.log(player)
+                if(player !== ""){
+                    console.log(game(player));
+                }else{
+                    console.log(player);
+                }
                 break;
             case 2:
                 exit(choice)

@@ -31,7 +31,7 @@ const assortmentOption = async (back) => {
             await readingFromDB();
             setTimeout(()=>{
                 assortmentOption(back);
-                return "";
+                return ""
             },5000);
             break;
         case 3:
@@ -40,6 +40,7 @@ const assortmentOption = async (back) => {
             name = prompt("Enter name: ");
 
             player = await loadPlayer(name,assortmentOption,back);
+
             if(player !== undefined){
                 const newPlayer = new Player(player.name,player.age,player.iq,player.strong,player.dexterity);
                 return newPlayer;
