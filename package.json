@@ -1,0 +1,28 @@
+{
+  "name": "magicflower",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.41",
+    "@sequelize/sqlite3": "^7.0.0-alpha.41",
+    "axios": "^1.7.3",
+    "chalk": "^5.3.0",
+    "cowsay": "^1.6.0",
+    "figlet": "^1.7.0",
+    "log-update": "^6.1.0",
+    "prompt-sync": "^4.2.0",
+    "sequelize": "7.0.0-next.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^22.1.0"
+  }
+}
