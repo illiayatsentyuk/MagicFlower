@@ -31,7 +31,7 @@ class Player{
         return this.dexterity;
     }
     decreaseInstructions(value){
-        if((this.instructions-value) < 0){
+        if((this.instructions-value) <= 0){
             this.instructions = 0;
             return "Instructions cannot be less than 0";
         }else{

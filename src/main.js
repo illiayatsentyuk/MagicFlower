@@ -6,7 +6,7 @@ import assortmentOption from "./choice/assortment.js";
 import exit from "./choice/exit.js";
 import loading from "./loading/loading.js";
 import logUpdate from "log-update";
-
+import game from "./game/game.js"
 
 const error = chalk.bold.red;
 const warning = chalk.hex('#FFA500');
@@ -33,6 +33,7 @@ const choice = () =>{
                 console.clear();
                 print();
                 const player = await assortmentOption(choice);
+                console.log(game(player));
                 // console.log(chalk.green("play"));
                 // const player = createPlayer(choice);
                 // console.log(player)

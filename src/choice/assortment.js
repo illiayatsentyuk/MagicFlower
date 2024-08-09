@@ -40,9 +40,8 @@ const assortmentOption = async (back) => {
             name = prompt("Enter name: ");
 
             player = await loadPlayer(name,assortmentOption,back);
-            console.log(player)
             if(player !== undefined){
-                const newPlayer = new Player(player.name,player.age,player.iq,player.strong,player.dexterity)
+                const newPlayer = new Player(player.name,player.age,player.iq,player.strong,player.dexterity);
                 return newPlayer;
             }else{
                 console.log(chalk.red("Somthing happened!"));
