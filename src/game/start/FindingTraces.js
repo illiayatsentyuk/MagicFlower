@@ -1,4 +1,8 @@
 import print from "../../plugins/figlet.js";
+import {executeAllTasksRandomly} from "./actionsForFirstPart.js";
+import promptSync from "prompt-sync";
+const prompt = promptSync();
+
 console.clear()
 const startOfTheGame = (player) => {
     print();
@@ -10,7 +14,10 @@ const startOfTheGame = (player) => {
             "чарівність. Ви повинні пройти через різні випробування, аби знайти квітку\n" +
             "та повернути її на місце, відновивши магію лісу\n" +
             "#------------------------------------------------------------------------------------------#");
-
+            prompt("Press enter: ");
+            executeAllTasksRandomly(player)
+            return player;
     },500)
 }
-startOfTheGame()
+
+export default startOfTheGame;
