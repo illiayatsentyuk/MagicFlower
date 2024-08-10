@@ -109,7 +109,7 @@ const createPlayer = async (assortment,back) => {
                     dexterity:player.dexterity,
                     hp,
                 });
-                return model.dataValues;
+                return player;
             }
         }
 

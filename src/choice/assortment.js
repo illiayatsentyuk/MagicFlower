@@ -30,7 +30,7 @@ const assortmentOption = async (back) => {
         case 2:
             await readingFromDB();
             setTimeout(()=>{
-                assortmentOption(back);
+                back();
                 return ""
             },5000);
             break;

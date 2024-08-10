@@ -18,7 +18,7 @@ const { Sequelize, Model, DataTypes } = pkg;
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: 'C:/Users/ADMIN/Desktop/LNTN/MagicFlower/creatures/players.sqlite'
+    storage: 'enter full path to this file'
 });
 
 class PlayerModel extends Model {}
